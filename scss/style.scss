@@ -4,6 +4,7 @@
 body{
    margin: 0rem;
    padding: 0rem;
+   font-family: $font;
    color:$dark-color;
    overflow-x: hidden;
 
@@ -23,86 +24,124 @@ body{
    
             a{
                text-decoration: none;
+               font-weight:bold;
                font-size:1.5rem;
                color:$light-color;
             }
          }
       }
-   
-      .search-section{
-         // margin:1rem 2.5rem;
-         align-items: center;
-   
-         .search-box{
-            padding:0rem 2rem 1rem 2rem;
-            border-radius:0.15rem;
-            border:0.1rem solid $light-color;
-   
-            input{
-               width:100%;
-               outline:none;
-               padding:0.35rem;
-               border:0.05rem solid $dark-color;
-               border-radius:0.1rem;
-   
-               &:focus{
-                  border:0.1rem solid $primary-color;
+
+      .content-div{
+         margin:1rem;
+
+         .alert{
+            text-align: center;
+            margin-bottom:0.75rem;
+            padding:0.5rem 0rem;
+            color: $light-color;
+            background: #ff5252;
+            border-radius:4px;
+         }
+      
+         .search-section{
+            align-items: center;
+      
+            .search-box{
+               padding:0rem 2rem 1rem 2rem;
+               border-radius:0.15rem;
+               border:0.1rem solid $light-color;
+      
+               input{
+                  width:100%;
+                  outline:none;
+                  padding:0.35rem;
+                  border:0.05rem solid $dark-color;
+                  border-radius:0.1rem;
+      
+                  &:focus{
+                     border:0.1rem solid $primary-color;
+                  }
                }
             }
          }
-      }
+      
+         .display-sec{
    
-      .display-sec{
-
-         .profile{
-            display:flex;
-            padding:1.2rem 2rem;
-            border: 0.1rem solid $light-color;
-   
-            .item-2{
-               margin-right: 2rem;
-   
-               .imgstyle{
-                  width:175px;
-                  margin-bottom: 0.2rem;
-               }
-            }
-
-            .item-8{
-               width:100%;
-
-               .git-info{
-                  display: flex;
-
-                  .block{
-                     font-size: 0.8rem;
-                     margin-right: 0.5rem;
-                     border-radius: 4px;
-                     padding: 0.25rem 0.5rem;
-                     // padding: 0.5rem 0.75rem;
+            .profile{
+               display:flex;
+               padding:1.2rem 2rem;
+               border: 0.1rem solid $light-color;
+      
+               .item-2{
+                  margin-right: 2rem;
+      
+                  .imgstyle{
+                     width:175px;
+                     margin-bottom: 0.2rem;
                   }
                }
-
-               .basic-info{
-                  margin-top:1rem;
-                  border: 0.1rem solid $light-color;
-
-                  ul{
-                     padding:0rem;
-
-                     li{
-                        list-style: none;
-                        padding-left:1rem;
-
-                        &:not(:last-child){
-                           border-bottom: 0.1rem solid $light-color;
-                           padding-bottom: 0.65rem;
-                        }
-
-                        &:not(:first-child){
-                           padding-top: 0.65rem;
+   
+               .item-8{
+                  width:100%;
+   
+                  .git-info{
+                     display: flex;
+                  }
+   
+                  .basic-info{
+                     margin-top:1rem;
+                     border: 0.1rem solid $light-color;
+   
+                     ul{
+                        padding:0rem;
+   
+                        li{
+                           list-style: none;
+                           padding-left:1rem;
+   
+                           &:not(:last-child){
+                              border-bottom: 0.1rem solid $light-color;
+                              padding-bottom: 0.65rem;
+                           }
+   
+                           &:not(:first-child){
+                              padding-top: 0.65rem;
+                           }
                         }
                      }
+                  }
+               }
+            }
+   
+            h1{
+               margin:1rem 0rem 0.5rem 0rem;
+               font-weight: bold;
+            }
+   
+            .user-repos{
+      
+               .repos-sec{
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding:0.75rem 2rem 0.75rem 1rem;
+                  margin-bottom: 0.5rem;
+                  border:1px solid $light-color;
+   
+                  .repo-link{
+                     .reponame{
+                        color:$dark-color;
+                        font-size:1.25rem;
+                        
+                        &:hover{
+                           color:$primary-color;
+                           font-weight: bold;
+                        }
+                     }
+                  }
+   
+                  .repo-info{
+                     display: flex;
                   }
                }
             }
@@ -112,7 +151,7 @@ body{
       .foot{
          width:100%;
          text-align: center;
-         margin-top: 1.5rem;
+         margin-top: 0.5rem;
          border:0.01rem solid $light-color;
       }
    }

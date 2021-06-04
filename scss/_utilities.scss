@@ -2,11 +2,14 @@
 
 .box-width{
    margin-top:1rem;
-   width:60%;
+   // width:55%;
+}
+
+a{
+   text-decoration: none;
 }
 
 .btn{
-   text-decoration: none;
    padding:0.5rem 1.5rem;
    border-radius:20px;
    background: $primary-color;
@@ -16,6 +19,13 @@
 .link-btn{
    color:$light-color;
    display: block;
+}
+
+.block{
+   font-size: 0.85rem;
+   margin-right: 0.65rem;
+   border-radius: 4px;
+   padding: 0.25rem 0.5rem;
 }
 
 .block-dark{
