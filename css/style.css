@@ -28,7 +28,7 @@ body {
   margin: 0rem;
   padding: 0rem;
   color: #4e4e4e;
-  background: rgba(253, 206, 206, 0.5);
+  overflow-x: hidden;
 }
 
 body .body-container {
@@ -36,6 +36,7 @@ body .body-container {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: rgba(253, 206, 206, 0.5);
 }
 
 body .body-container .navbar {
@@ -132,5 +133,5 @@ body .body-container .foot {
   width: 100%;
   text-align: center;
   margin-top: 1.5rem;
-  border: 0.1rem solid #ffffff;
+  border: 0.01rem solid #ffffff;
 }

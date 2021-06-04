@@ -5,13 +5,14 @@ body{
    margin: 0rem;
    padding: 0rem;
    color:$dark-color;
-   background:rgba($color:$secondary-color , $alpha:0.5);
+   overflow-x: hidden;
 
    .body-container{
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      background:rgba($color:$secondary-color , $alpha:0.5);
 
       .navbar{
          width:100%;
@@ -112,7 +113,7 @@ body{
          width:100%;
          text-align: center;
          margin-top: 1.5rem;
-         border:0.1rem solid $light-color;
+         border:0.01rem solid $light-color;
       }
    }
 }
