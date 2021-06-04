@@ -1,0 +1,118 @@
+@import 'variables';
+@import 'utilities';
+
+body{
+   margin: 0rem;
+   padding: 0rem;
+   color:$dark-color;
+   background:rgba($color:$secondary-color , $alpha:0.5);
+
+   .body-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .navbar{
+         width:100%;
+         background: $primary-color;
+   
+         .container{
+            padding:0.75rem 1.5rem;
+   
+            a{
+               text-decoration: none;
+               font-size:1.5rem;
+               color:$light-color;
+            }
+         }
+      }
+   
+      .search-section{
+         // margin:1rem 2.5rem;
+         align-items: center;
+   
+         .search-box{
+            padding:0rem 2rem 1rem 2rem;
+            border-radius:0.15rem;
+            border:0.1rem solid $light-color;
+   
+            input{
+               width:100%;
+               outline:none;
+               padding:0.35rem;
+               border:0.05rem solid $dark-color;
+               border-radius:0.1rem;
+   
+               &:focus{
+                  border:0.1rem solid $primary-color;
+               }
+            }
+         }
+      }
+   
+      .display-sec{
+
+         .profile{
+            display:flex;
+            padding:1.2rem 2rem;
+            border: 0.1rem solid $light-color;
+   
+            .item-2{
+               margin-right: 2rem;
+   
+               .imgstyle{
+                  width:175px;
+                  margin-bottom: 0.2rem;
+               }
+            }
+
+            .item-8{
+               width:100%;
+
+               .git-info{
+                  display: flex;
+
+                  .block{
+                     font-size: 0.8rem;
+                     margin-right: 0.5rem;
+                     border-radius: 4px;
+                     padding: 0.25rem 0.5rem;
+                     // padding: 0.5rem 0.75rem;
+                  }
+               }
+
+               .basic-info{
+                  margin-top:1rem;
+                  border: 0.1rem solid $light-color;
+
+                  ul{
+                     padding:0rem;
+
+                     li{
+                        list-style: none;
+                        padding-left:1rem;
+
+                        &:not(:last-child){
+                           border-bottom: 0.1rem solid $light-color;
+                           padding-bottom: 0.65rem;
+                        }
+
+                        &:not(:first-child){
+                           padding-top: 0.65rem;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   
+      .foot{
+         width:100%;
+         text-align: center;
+         margin-top: 1.5rem;
+         border:0.1rem solid $light-color;
+      }
+   }
+}

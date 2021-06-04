@@ -1,0 +1,136 @@
+.box-width {
+  margin-top: 1rem;
+  width: 60%;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  background: #6b8eb7;
+  text-align: center;
+}
+
+.link-btn {
+  color: #ffffff;
+  display: block;
+}
+
+.block-dark {
+  background: #FFCC98;
+}
+
+.block-light {
+  background: #6b8eb7;
+}
+
+body {
+  margin: 0rem;
+  padding: 0rem;
+  color: #4e4e4e;
+  background: rgba(253, 206, 206, 0.5);
+}
+
+body .body-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body .body-container .navbar {
+  width: 100%;
+  background: #6b8eb7;
+}
+
+body .body-container .navbar .container {
+  padding: 0.75rem 1.5rem;
+}
+
+body .body-container .navbar .container a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+body .body-container .search-section {
+  align-items: center;
+}
+
+body .body-container .search-section .search-box {
+  padding: 0rem 2rem 1rem 2rem;
+  border-radius: 0.15rem;
+  border: 0.1rem solid #ffffff;
+}
+
+body .body-container .search-section .search-box input {
+  width: 100%;
+  outline: none;
+  padding: 0.35rem;
+  border: 0.05rem solid #4e4e4e;
+  border-radius: 0.1rem;
+}
+
+body .body-container .search-section .search-box input:focus {
+  border: 0.1rem solid #6b8eb7;
+}
+
+body .body-container .display-sec .profile {
+  display: flex;
+  padding: 1.2rem 2rem;
+  border: 0.1rem solid #ffffff;
+}
+
+body .body-container .display-sec .profile .item-2 {
+  margin-right: 2rem;
+}
+
+body .body-container .display-sec .profile .item-2 .imgstyle {
+  width: 175px;
+  margin-bottom: 0.2rem;
+}
+
+body .body-container .display-sec .profile .item-8 {
+  width: 100%;
+}
+
+body .body-container .display-sec .profile .item-8 .git-info {
+  display: flex;
+}
+
+body .body-container .display-sec .profile .item-8 .git-info .block {
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+}
+
+body .body-container .display-sec .profile .item-8 .basic-info {
+  margin-top: 1rem;
+  border: 0.1rem solid #ffffff;
+}
+
+body .body-container .display-sec .profile .item-8 .basic-info ul {
+  padding: 0rem;
+}
+
+body .body-container .display-sec .profile .item-8 .basic-info ul li {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+body .body-container .display-sec .profile .item-8 .basic-info ul li:not(:last-child) {
+  border-bottom: 0.1rem solid #ffffff;
+  padding-bottom: 0.65rem;
+}
+
+body .body-container .display-sec .profile .item-8 .basic-info ul li:not(:first-child) {
+  padding-top: 0.65rem;
+}
+
+body .body-container .foot {
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
+  border: 0.1rem solid #ffffff;
+}
